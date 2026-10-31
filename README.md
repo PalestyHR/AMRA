@@ -104,7 +104,3 @@ python hosted.py
 ## Project and credits
 
 Developed for **AAE1003, Topic 9 Team**, The Hong Kong Polytechnic University.
-
-GUI, website, logo design, interaction design and deployment: **He Youbin**.
-
-GenAI supported implementation, visual development and revision. The group report describes the contributions and verification records. Font licences and asset sources are retained in `assets/`.
