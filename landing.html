@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="AMRA is an AI-assisted aircraft maintenance record screening tool with source evidence, local rule checks and human review.">
+  <title>AMRA</title>
+  <link rel="icon" href="/assets/amra-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/landing.css">
+  <script src="/landing.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#project">Skip the animation</a>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="AMRA home">
+      <img class="nav-symbol" src="/assets/amra-symbol.png" alt=""><span class="logo-lettering">AMRA</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a class="nav-link" href="#project">About the project</a>
+      <a class="nav-launch" href="/workbench">Open workbench <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="globe-story" id="story" aria-label="AMRA introduction">
+      <div class="story-stage">
+        <canvas id="globe" aria-label="A monochrome globe initially facing Hong Kong. Scrolling turns the globe and reveals an aircraft tracing an arc around it." role="img"></canvas>
+        <div class="hk-marker" id="hkMarker" hidden aria-label="Hong Kong, HKG, 22.3193 degrees north, 114.1694 degrees east">
+          <span class="hk-pulse" aria-hidden="true"></span>
+          <span class="hk-core" aria-hidden="true"></span>
+          <span class="hk-leader" aria-hidden="true"></span>
+          <span class="hk-label" aria-hidden="true">
+            <span class="hk-name">Hong Kong</span>
+            <span class="hk-code">HKG</span>
+            <span class="hk-coordinates">22.3193° N<br>114.1694° E</span>
+          </span>
+        </div>
+        <div class="story-shade" aria-hidden="true"></div>
+        <div class="story-copy">
+          <h1 class="logo-lettering">AMRA</h1>
+          <div class="project-subtitle terminal-input" role="img" aria-label="Aircraft Maintenance Record Assistant. Presented by Topic 9 Team.">
+            <span class="terminal-prompt" aria-hidden="true">&gt;</span>
+            <span class="terminal-text" aria-hidden="true">Aircraft Maintenance Record Assistant</span>
+            <span class="terminal-cursor" aria-hidden="true"></span>
+          </div>
+          <p class="story-description">An AI-driven early-warning assistant for aircraft maintenance record screening.</p>
+          <div class="hero-actions">
+            <a class="primary-entry" href="/workbench">Open workbench <span aria-hidden="true">↗</span></a>
+            <a class="sample-entry" href="/workbench?demo=1">Try sample records <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="scene-bottomline">
+          <a href="#project" class="scroll-cue"><span class="scroll-line" aria-hidden="true"></span>Project information</a>
+          <span class="progress-track" aria-hidden="true"><span id="progressFill"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section" id="project">
+      <div class="project-logo reveal"><img src="/assets/amra-logo-clean.png" alt="AMRA — Aircraft Maintenance Record Assistant, with an orbital aircraft mark" width="800" height="700" loading="lazy"></div>
+      <div class="project-content reveal">
+        <p class="eyebrow">About the project</p>
+        <h2>Aircraft Maintenance<br>Record Assistant</h2>
+        <p>AMRA combines language-model extraction, rule-based screening and human review. It reads current maintenance entries and related history, identifies review-relevant information, and links the findings to source quotations.</p>
+        <p>The workbench lets users inspect the evidence, add review notes and export the results. A prepared demo is available without an API key.</p>
+        <ol class="project-functions"><li>Extract information</li><li>Check evidence and screening rules</li><li>Review and export</li></ol>
+        <p class="project-credit">A student project at The Hong Kong Polytechnic University.<br>AAE1003 · 2026</p>
+        <a class="project-entry" href="/workbench">Open workbench <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="website-credit"><p>Website designed and developed by He Youbin</p></footer>
+</body>
+</html>

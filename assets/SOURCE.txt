@@ -1,0 +1,14 @@
+Coastline geometry: Natural Earth 1:110m coastline, public domain. Source: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_coastline.geojson
+Data policy: https://www.naturalearthdata.com/about/terms-of-use/
+
+AMRA logo assets: user-supplied Code_Generated_Image (4), (5), (6).png; copied unchanged as amra-logo-clean.png, amra-symbol.png, amra-wordmark.png.
+
+Italiana display font: Santiago Orozco, SIL Open Font License 1.1. Source: https://github.com/google/fonts/tree/main/ofl/italiana. Hosted locally; license in italiana-license.txt.
+
+AMRAWordmark-Regular.ttf: custom A/M/R display font traced from the user-provided original Gemini_Generated_Image_m7l7ctm7l7ctm7l7.jpg. Built by tmp/build_amra_wordmark.py; no other font outlines used.
+
+Manrope variable font: SIL Open Font License 1.1. Source: https://github.com/google/fonts/tree/main/ofl/manrope. Locally hosted; license in manrope-license.txt.
+
+VT323 terminal font: Peter Hull, SIL Open Font License 1.1. Source: https://github.com/google/fonts/tree/main/ofl/vt323. Locally hosted; license in vt323-license.txt.
+
+Oxanium variable font: SIL Open Font License 1.1. Source: https://github.com/google/fonts/tree/main/ofl/oxanium. Locally hosted; license in oxanium-license.txt.

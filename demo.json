@@ -1,0 +1,93 @@
+{
+  "text": "W1 | 12 Mar 2026, B-DEMO1: Nose wheel tire pressure 205 psi, below the servicing target of 210-220 psi. Inflated to 215 psi; leak check normal, no damage. Released per AMM 12-14-32. Signed: Technician A (synthetic).\n\nW2 | 12 Mar 2026, B-DEMO1: No.2 engine vibration 4.2 units during climb; three similar reports in the past 14 days. Previous inspection NFF; approved deferral until this evening. Crew reported mild buffeting. Signed: Maintenance Controller B (synthetic).\n\nG1 | ### @@ ?? ## [unreadable scan] %% @@ ###",
+  "extraction": {
+    "records": [
+      {
+        "id": "W1",
+        "readability": "readable",
+        "fields": {
+          "e": 1,
+          "r": 0,
+          "u": 0,
+          "c": 0,
+          "a": 0,
+          "m": 0
+        },
+        "evidence": {
+          "e": [
+            {
+              "record_id": "W1",
+              "quote": "Nose wheel tire pressure 205 psi, below the servicing target of 210-220 psi"
+            }
+          ]
+        },
+        "reason": "Low tire pressure was corrected and the leak check was normal.",
+        "missing_information": [],
+        "manual_checks": [
+          "Check the applicable servicing target, manual reference and signature.",
+          "Confirm the available history for recurring pressure loss."
+        ]
+      },
+      {
+        "id": "W2",
+        "readability": "readable",
+        "fields": {
+          "e": 1,
+          "r": 1,
+          "u": 1,
+          "c": 1,
+          "a": 0,
+          "m": 0
+        },
+        "evidence": {
+          "e": [
+            {
+              "record_id": "W2",
+              "quote": "No.2 engine vibration 4.2 units during climb"
+            }
+          ],
+          "r": [
+            {
+              "record_id": "W2",
+              "quote": "three similar reports in the past 14 days"
+            }
+          ],
+          "u": [
+            {
+              "record_id": "W2",
+              "quote": "approved deferral until this evening"
+            }
+          ],
+          "c": [
+            {
+              "record_id": "W2",
+              "quote": "Crew reported mild buffeting"
+            }
+          ]
+        },
+        "reason": "Repeated engine vibration with an open deferral warrants engineering review.",
+        "missing_information": [
+          "Confirm the specific deferral approval reference."
+        ],
+        "manual_checks": [
+          "Verify vibration units, applicable limits and prior reports.",
+          "Check deferral approval and follow-up completion."
+        ]
+      },
+      {
+        "id": "G1",
+        "readability": "unreadable",
+        "fields": {},
+        "evidence": {},
+        "reason": "Recover the original page for review.",
+        "missing_information": [
+          "Readable record content."
+        ],
+        "manual_checks": [
+          "Rescan or retrieve the source document."
+        ]
+      }
+    ]
+  },
+  "description": "English adaptations of project synthetic examples; prepared fields for interface demonstration."
+}

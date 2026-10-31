@@ -1,0 +1,136 @@
+:root{color-scheme:dark;--background:#08090b;--text:#f3f3f2;--muted:#979ba4;font-family:Manrope,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--background);font-synthesis:none;scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid currentColor;outline-offset:6px}::selection{background:#ddd;color:#111}
+.skip-link{position:fixed;left:20px;top:-80px;z-index:100;padding:14px 18px;background:white;color:#111}.skip-link:focus{top:20px}
+.site-header{position:fixed;inset:0 0 auto;z-index:30;height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 4.4%;background:linear-gradient(#08090be8,#08090b00);transition:background .3s}
+.site-header.is-scrolled{background:#08090bea;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff0c}
+.wordmark{display:flex;align-items:center;gap:12px;font-size:21px;letter-spacing:4px;font-weight:550}.brand-symbol{width:49px;height:34px;position:relative;overflow:hidden;display:block}.brand-symbol img{position:absolute;width:92px;height:92px;max-width:none;left:-22px;top:-22px;mix-blend-mode:screen}
+.site-header nav{display:flex;align-items:center;gap:34px;font-size:12px}.nav-link{color:#a5a7ae;transition:color .2s}.nav-link:hover{color:white}.nav-launch{display:flex;align-items:center;gap:24px;padding:12px 19px;border:1px solid #ffffff38;border-radius:28px;transition:background .2s,color .2s}.nav-launch:hover{background:white;color:#111}.nav-launch span{font-size:18px}
+.globe-story{height:230svh;position:relative}.story-stage{position:sticky;top:0;height:100svh;min-height:650px;overflow:hidden;isolation:isolate;background:var(--background)}
+#globe{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:-2}.story-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#08090bf2 0%,#08090bb5 24%,#08090b18 50%,transparent 72%);pointer-events:none}
+.story-copy{position:absolute;left:7.5%;top:25%;max-width:510px}.eyebrow{font-size:10px;letter-spacing:2.1px;text-transform:uppercase;font-weight:500;line-height:1.8;margin:0 0 24px;color:#90959f}
+.story-copy h1{font-size:clamp(80px,9.1vw,144px);font-weight:450;line-height:1;letter-spacing:-.055em;margin:0 0 25px}.project-subtitle{font-size:clamp(24px,2.45vw,38px);line-height:1.25;letter-spacing:-.7px;margin:0 0 22px;color:#d3d5da;font-weight:400}
+.story-description{font-size:14px;line-height:1.85;color:var(--muted);max-width:365px;margin:0 0 30px}.hero-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.primary-entry{display:flex;align-items:center;gap:26px;background:#eeeef0;color:#17191e;border-radius:30px;font-size:12px;padding:14px 21px;transition:background .2s}.primary-entry:hover{background:white}.primary-entry span{font-size:19px}.sample-entry{font-size:11px;color:#a8abb3;padding:10px 0}.sample-entry span{margin-left:8px}
+.scene-topline{position:absolute;right:6.5%;top:17%;display:flex;gap:20px;align-items:center;font-family:inherit;font-size:9px;letter-spacing:1.2px;color:#63666e}.scene-topline>span:first-child{color:#c4c5ca;border:1px solid #ffffff24;padding:5px 7px}
+.scene-bottomline{position:absolute;left:7.5%;right:6.5%;bottom:6.5%;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#8c8e95;letter-spacing:1px}.scroll-cue{display:flex;align-items:center;gap:14px}.scroll-line{height:30px;width:1px;display:block;background:linear-gradient(transparent,#b7b9c0)}.progress-track{width:110px;height:1px;background:#ffffff25;overflow:hidden}.progress-track>span{display:block;height:100%;width:0;background:#ddd}
+.project-section{background:#0d0f12;display:grid;grid-template-columns:1fr 1fr;gap:9%;padding:90px 8.5% 100px;align-items:center;scroll-margin-top:85px}.project-logo{max-width:520px;width:100%;justify-self:center}.project-logo img{width:100%;height:auto;display:block}.project-content h2{font-size:clamp(28px,3vw,44px);letter-spacing:-1.4px;line-height:1.2;font-weight:450;margin:0 0 26px}.project-content>p:not(.eyebrow){font-size:14px;color:#9a9fa9;line-height:1.9;max-width:490px}.project-functions{list-style:none;counter-reset:functions;padding:0;border-top:1px solid #ffffff16;margin:26px 0 25px;max-width:450px}.project-functions li{counter-increment:functions;padding:12px 0;border-bottom:1px solid #ffffff12;font-size:12px;color:#c3c7cf}.project-functions li:before{content:counter(functions,decimal-leading-zero);font-family:inherit;color:#626b79;font-size:9px;margin-right:22px}.project-content .project-credit{font-size:11px!important;color:#737a87!important;margin-top:25px}.project-entry{display:inline-flex;gap:40px;align-items:center;border-bottom:1px solid #ffffff38;padding:10px 0;margin-top:10px;font-size:12px}.project-entry span{font-size:20px}
+.site-footer{background:#0d0f12;color:#787e89;padding:25px 5%;border-top:1px solid #ffffff10;display:flex;gap:28px;align-items:center;font-size:10px}.footer-wordmark{font-size:16px;font-weight:500;letter-spacing:2px;color:#d9dce2}.site-footer p{margin:0}.site-footer>a:nth-last-child(2){margin-left:auto}.site-footer>span{padding-left:20px}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.reveal.is-visible{opacity:1;transform:none}
+@media(min-width:1800px){.story-copy{left:10%}.scene-bottomline{left:10%}.project-section{padding-left:13%;padding-right:13%}}
+@media(max-width:1000px){.site-header{height:76px}.site-header nav{gap:20px}.story-copy{left:6%;max-width:435px}.story-copy h1{font-size:100px}.project-subtitle{font-size:29px}.story-description{max-width:320px;font-size:13px}.hero-actions{gap:16px}.scene-topline{right:5%;font-size:8px}.project-section{padding:80px 7%;gap:6%}}
+@media(max-width:700px){.site-header{height:72px;padding:0 6%}.wordmark{font-size:18px;gap:7px;letter-spacing:3px}.brand-symbol{width:42px;height:30px}.brand-symbol img{width:84px;height:84px;left:-20px;top:-20px}.nav-link{display:none}.nav-launch{font-size:10px;gap:15px;padding:10px 14px}.globe-story{height:210svh}.story-stage{min-height:720px}.story-copy{left:7%;right:7%;top:15%;max-width:none}.story-copy .eyebrow{font-size:8px;letter-spacing:1.2px;margin-bottom:14px}.story-copy h1{font-size:76px;margin-bottom:15px}.project-subtitle{font-size:25px;line-height:1.2;margin-bottom:17px}.project-subtitle br{display:none}.story-description{font-size:12px;line-height:1.8;max-width:330px;margin-bottom:19px}.hero-actions{gap:19px}.primary-entry{font-size:11px;padding:12px 17px;gap:20px}.sample-entry{font-size:10px}.scene-topline{display:none}.scene-bottomline{left:7%;right:7%;bottom:2.5%;font-size:8px}.scroll-line{height:20px}.progress-track{width:70px}.story-shade{background:linear-gradient(180deg,#08090b00 35%,#08090b00 75%,#08090b80)}.project-section{grid-template-columns:1fr;padding:55px 7% 70px;gap:30px}.project-logo{max-width:330px}.project-content h2{font-size:32px}.project-content>p:not(.eyebrow){font-size:13px}.site-footer{flex-wrap:wrap;padding:25px 7%;gap:14px 20px;font-size:9px}.site-footer p{width:calc(100% - 100px)}.site-footer>a:nth-last-child(2){margin-left:0}.site-footer>span{margin-left:auto;padding-left:0}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.globe-story{height:110svh}.reveal{opacity:1;transform:none;transition:none}.nav-launch,.primary-entry,.nav-link{transition:none}}
+
+/* Keep the wordmark selectable text with a locally hosted display font. */
+@font-face{font-family:AMRA Wordmark;src:url('/assets/AMRAWordmark-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.logo-lettering,.footer-wordmark{font-family:"AMRA Wordmark",Georgia,serif;font-weight:400;font-synthesis:none}
+.wordmark{gap:12px}.nav-symbol{display:block;width:48px;height:34px;object-fit:contain}
+.wordmark>.logo-lettering{font-size:21px;letter-spacing:0;line-height:1}
+.story-copy h1{font-size:clamp(76px,6.6vw,100px);letter-spacing:0;line-height:1.05;font-weight:400;margin:0 0 27px;white-space:nowrap}
+.project-logo img{mix-blend-mode:lighten}
+.project-content h2{letter-spacing:-.6px}
+@media(max-width:1000px){.story-copy h1{font-size:85px}}
+@media(max-width:700px){.story-copy h1{font-size:58px;letter-spacing:0;margin-bottom:22px}.wordmark>.logo-lettering{font-size:17px}.nav-symbol{width:35px;height:28px}.wordmark{gap:8px}.project-content h2{letter-spacing:-.4px}}
+
+/* Quiet sans-serif typography complements the custom AMRA lettering. */
+@font-face{font-family:Manrope;src:url('/assets/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-style:normal;font-display:swap}
+.story-copy{max-width:570px}
+.project-subtitle{font-size:clamp(19px,1.6vw,26px);font-weight:300;letter-spacing:-.025em;line-height:1.5;white-space:nowrap;margin-bottom:23px}
+.story-description{font-size:14px;font-weight:400;line-height:1.9;max-width:385px}
+.site-header nav{font-size:12px;font-weight:400}
+.project-content h2{font-weight:300;letter-spacing:-.035em}
+.project-content>p:not(.eyebrow){line-height:1.95}
+@media(max-width:1000px) and (min-width:701px){.project-subtitle{font-size:19px}.story-copy{max-width:490px}}
+@media(max-width:700px){.project-subtitle{font-size:clamp(12px,4vw,22px);font-weight:350;letter-spacing:-.035em;margin-bottom:18px}.story-description{font-size:12px;max-width:330px}.story-copy{max-width:none}.project-content h2{font-size:30px}}
+
+/* White terminal lettering sits directly on the page background. */
+@font-face{font-family:VT323;src:url('/assets/VT323-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.project-subtitle.terminal-input{
+  display:flex;align-items:center;gap:0;width:39.3ch;max-width:100%;
+  min-height:30px;padding:0;border:0;background:none;box-shadow:none;
+  font-family:VT323,Consolas,monospace;font-size:26px;font-weight:400;
+  letter-spacing:0;line-height:1.15;white-space:nowrap;color:#f3f3f2;
+  text-shadow:none;margin-bottom:25px;
+}
+.terminal-prompt{color:#a7abb0;margin-right:.65ch}
+.terminal-text{display:block;flex:none;min-height:1em}
+.terminal-input.is-selected .terminal-text{color:#090b0e;background:#e6e8eb}
+.terminal-input.is-selected .terminal-cursor{opacity:0;animation:none}
+.terminal-cursor{display:block;flex:none;width:.48ch;height:.9em;margin-left:.15ch;background:#f3f3f2;animation:terminal-blink 1.05s steps(1,end) infinite}
+@keyframes terminal-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.terminal-input.is-typing .terminal-cursor{animation:none;opacity:1}
+@media(max-width:1000px) and (min-width:701px){.project-subtitle.terminal-input{font-size:23px}}
+@media(max-width:700px){.project-subtitle.terminal-input{font-size:clamp(15px,4.9vw,25px);min-height:25px;margin-bottom:20px}}
+@media(prefers-reduced-motion:reduce){.terminal-cursor{animation:none;opacity:.6}}
+
+/* Static terminal controls: clear click targets without typing or blinking labels. */
+.site-header nav a,.hero-actions a,.project-entry,.scroll-cue{
+  font-family:VT323,Consolas,monospace;font-weight:400;letter-spacing:0;
+  animation:none;transition:none;
+}
+.nav-launch,.primary-entry,.project-entry{
+  display:inline-flex;align-items:center;justify-content:center;gap:22px;
+  min-height:46px;padding:9px 17px;border:1px solid #f3f3f266;border-radius:0;
+  background:transparent;color:#f3f3f2;font-size:23px;line-height:1;
+}
+.nav-launch{min-height:42px;padding:7px 14px;font-size:21px;gap:20px}
+.primary-entry{border-color:#f3f3f2a6}
+.nav-launch:hover,.primary-entry:hover,.project-entry:hover{background:#f3f3f2;color:#08090b;border-color:#f3f3f2}
+.nav-launch span,.primary-entry span,.project-entry span{font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1}
+.sample-entry{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:9px 0;font-size:21px;line-height:1;color:#bfc3ca;border-bottom:1px solid #ffffff24}
+.sample-entry span{font-family:Manrope,Arial,sans-serif;font-size:16px;margin:0}
+.sample-entry:hover{color:#fff;border-bottom-color:#f3f3f2}
+.nav-link{font-size:21px}.scroll-cue{font-size:16px}
+.hero-actions{gap:24px}.project-entry{margin-top:12px}
+@media(max-width:700px){
+  .nav-launch{font-size:18px;padding:7px 10px;gap:12px;min-height:42px}
+  .nav-launch span{font-size:14px}
+  .hero-actions{gap:12px}
+  .primary-entry{font-size:18px;padding:9px 12px;gap:15px;min-height:44px}
+  .sample-entry{font-size:18px;gap:8px;min-height:44px}
+  .primary-entry span,.sample-entry span{font-size:14px}
+  .scroll-cue{font-size:13px}
+  .project-entry{font-size:22px}
+}
+
+.website-credit{padding:23px 8.5% 27px;background:#0d0f12;border-top:1px solid #ffffff0b;color:#888e98;text-align:right;font-family:VT323,Consolas,monospace;font-size:18px;line-height:1.5}
+.website-credit p{margin:0}
+@media(max-width:700px){.website-credit{padding:20px 7% 24px;text-align:center;font-size:16px}}
+
+/* Angular, medium-weight text echoes the supplied square technology references. */
+@font-face{font-family:Oxanium;src:url('/assets/Oxanium-Variable.ttf') format('truetype');font-weight:200 800;font-style:normal;font-display:swap}
+.story-description,.project-content,.website-credit{font-family:Oxanium,Manrope,Arial,sans-serif}
+.story-description{font-size:15px;font-weight:500;line-height:1.85;color:#afb4be;max-width:405px}
+.project-content h2{font-weight:500;letter-spacing:-.025em;line-height:1.23}
+.project-content .eyebrow{font-size:12px;font-weight:600;letter-spacing:1.6px;color:#a4aab5}
+.project-content>p:not(.eyebrow){font-size:15px;font-weight:450;line-height:1.9;color:#afb4be}
+.project-functions li{font-size:14px;font-weight:500}
+.project-content .project-credit{font-size:12px!important;font-weight:450;color:#929aa7!important}
+.website-credit{font-size:13px;font-weight:500;color:#a3aab6;letter-spacing:.1px;line-height:1.6}
+@media(max-width:700px){
+  .story-description{font-size:14px;line-height:1.8;max-width:330px}
+  .project-content h2{font-size:31px}
+  .project-content>p:not(.eyebrow){font-size:14px}
+  .website-credit{font-size:12px;letter-spacing:0}
+}
+
+/* A quiet geographic beacon, anchored to the rotating globe. */
+.hk-marker{position:absolute;left:0;top:0;width:1px;height:1px;z-index:0;pointer-events:none;color:#eef0f3}
+.hk-marker[hidden]{display:none}
+.hk-core{position:absolute;width:5px;height:5px;left:-2.5px;top:-2.5px;border-radius:50%;background:#f3f5f7;animation:hk-breathe 2.8s ease-in-out infinite}
+.hk-pulse{position:absolute;width:18px;height:18px;left:-9px;top:-9px;border:1px solid #e9edf76b;border-radius:50%;animation:hk-ripple 2.8s ease-out infinite}
+.hk-leader{position:absolute;left:9px;top:-18px;width:24px;height:18px;border-left:1px solid #c6ccd454;border-top:1px solid #c6ccd454;transform:skewY(-32deg);transform-origin:left bottom}
+.hk-label{position:absolute;left:39px;top:-51px;width:132px;display:flex;flex-direction:column;align-items:flex-start;gap:3px;font-family:Oxanium,Arial,sans-serif;text-shadow:0 1px 5px #08090b}
+.hk-name{font-size:14px;line-height:1.3;font-weight:500;white-space:nowrap}
+.hk-code{font-size:12px;line-height:1.3;font-weight:500;letter-spacing:1.8px;color:#aab1bd}
+.hk-coordinates{font-size:10px;line-height:1.65;font-weight:450;letter-spacing:.25px;color:#8f98a6}
+.hk-marker.is-left .hk-label{left:auto;right:39px;align-items:flex-end;text-align:right}
+.hk-marker.is-left .hk-leader{left:auto;right:9px;border-left:0;border-right:1px solid #c6ccd454;transform:skewY(32deg);transform-origin:right bottom}
+@keyframes hk-breathe{0%,100%{opacity:.4;box-shadow:0 0 3px #f0f4ff25}50%{opacity:1;box-shadow:0 0 12px #f0f4ff80}}
+@keyframes hk-ripple{0%{opacity:.55;transform:scale(.65)}85%,100%{opacity:0;transform:scale(1.8)}}
+@media(max-width:700px){.hk-label{width:112px;left:30px;top:-49px}.hk-name{font-size:12px}.hk-code{font-size:10px}.hk-coordinates{font-size:9px}.hk-leader{width:16px}.hk-marker.is-left .hk-label{right:30px}.hk-core{width:4px;height:4px;left:-2px;top:-2px}}
+@media(prefers-reduced-motion:reduce){.hk-core,.hk-pulse{animation:none}.hk-core{opacity:.85}.hk-pulse{opacity:.3;transform:none}}
+
+/* Lift the location text off the map without enclosing the beacon itself. */
+.hk-label{padding:10px 12px;border:1px solid #d8e1ef29;border-radius:5px;background:rgba(8,11,16,.84);box-shadow:0 5px 18px #00000030;backdrop-filter:blur(5px);text-shadow:none}
+.hk-coordinates{color:#a5afbe}
+@media(max-width:700px){.hk-label{padding:8px 10px;border-radius:4px}}
