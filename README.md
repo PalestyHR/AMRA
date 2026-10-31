@@ -103,4 +103,4 @@ python hosted.py
 
 ## Project and credits
 
-Developed for **AAE1003, Topic 9 Team**, The Hong Kong Polytechnic University.
+** Developed by AAE1003 Topic 9 Team**
